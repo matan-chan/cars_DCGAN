@@ -23,7 +23,7 @@ train(epochs=100000, batch_size=128, save_interval=500)
 ```
 ## example:
 <p align="left">
-  <img width="500" src="https://github.com/matan-chan/pokemon_DCGAN/blob/main/examples/example1.png?raw=true">
+  <img width="500" src="https://github.com/matan-chan/cars_DCGAN/blob/main/examples/example1.png?raw=true">
 </p>
 
 ## data:
