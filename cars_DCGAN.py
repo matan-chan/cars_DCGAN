@@ -160,14 +160,15 @@ def generate_car():
     generator_ = load_model('models/generator_model.h5')
     noise = np.random.normal(0, 1, (1, 100))
     gen_image = generator_.predict(noise)
-    gen_image = 0.5 * gen_image + 0.5
+    gen_image = (gen_image + 1) * 127.5
+    gen_image = gen_image.astype(int)
     plt.axis("off")
     plt.imshow(gen_image[0])
     plt.savefig(f"new_predictions/p{random.randint(0, 999)}.png")
     plt.close()
 
 
-
-
+for _ in range(10):
+    generate_car()
 
 
